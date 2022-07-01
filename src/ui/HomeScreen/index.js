@@ -1,15 +1,19 @@
-import {View, Text, FlatList} from 'react-native';
-import React from 'react';
+import {View, Text, FlatList, ScrollView, SafeAreaView} from 'react-native';
+import React, {useState, useRef, useMemo, useEffect, useContext} from 'react';
 
 //import Query
 import {usePostQuery} from '../../graphql/Post';
 
 //import Components
 import PostList from '../../components/Post/postList';
+import {MediaContext} from '../../App';
 
 const HomeScreen = () => {
   const {loading, error, data, refetch, fetchMore} = usePostQuery();
   let postLists = [];
+  const [videoMute, setVideoMute] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const mediaPlayerContext = useContext(MediaContext);
 
   if (loading) {
     <View>
@@ -19,16 +23,32 @@ const HomeScreen = () => {
 
   if (!loading && data) postLists = data?.posts?.edges;
 
-  const keyExtractor = React.useCallback((item, index) => index);
-  console.log('Post List Items ', postLists);
+  useEffect(() => {
+    if (postLists.length > 0) {
+      mediaPlayerContext.setMediaPlayId(postLists[0]['node']['id']);
+    }
+  }, [postLists]);
 
   return (
-    <View style={{flex: 1}}>
-      <FlatList
-        data={postLists}
-        keyExtractor={keyExtractor}
-        renderItem={({item}) => <PostList item={item} />}
-      />
+    <View style={{flex: 1, backgroundColor: '#000'}}>
+      <SafeAreaView>
+        <ScrollView
+          onScroll={event => {
+            setScrollPosition(event.nativeEvent.contentOffset.y);
+          }}>
+          {data?.posts?.edges.map((item, index) => {
+            return (
+              <PostList
+                item={item}
+                videoMute={videoMute}
+                setVideoMute={setVideoMute}
+                key={index}
+                scrollPosition={scrollPosition}
+              />
+            );
+          })}
+        </ScrollView>
+      </SafeAreaView>
     </View>
   );
 };
