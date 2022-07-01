@@ -8,11 +8,11 @@
  * @format
  */
 
-import React from 'react';
+import React, {createContext, useState} from 'react';
 import HomeScreen from './ui/HomeScreen';
 // import SplashScreen from 'react-native-lottie-splash-screen';
 import {BhApolloProvider} from './apollo';
-
+export const MediaContext = createContext();
 const App = () => {
   // React.useEffect(() => {
   //   setTimeout(
@@ -22,9 +22,12 @@ const App = () => {
   //     Platform.OS === 'android' ? 0 : 4000,
   //   );
   // }, []);
+  const [mediaPlayId, setMediaPlayId] = useState(null);
   return (
     <BhApolloProvider>
-      <HomeScreen />
+      <MediaContext.Provider value={{mediaPlayId, setMediaPlayId}}>
+        <HomeScreen />
+      </MediaContext.Provider>
     </BhApolloProvider>
   );
 };
