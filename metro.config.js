@@ -23,7 +23,7 @@ const {getDefaultConfig} = require('metro-config');
 // + @apollo/client integration
 module.exports = (async () => {
   const {
-    resolver: {sourceExts},
+    resolver: {sourceExts, assetExts},
   } = await getDefaultConfig();
 
   return {
@@ -32,16 +32,19 @@ module.exports = (async () => {
         transform: {
           experimentalImportSupport: false,
           inlineRequires: true,
+          babelTransformerPath: require.resolve('react-native-svg-transformer'),
         },
       }),
       //babelTransformerPath: require.resolve('react-native-sass-transformer'),
     },
     resolver: {
+      assetExts: assetExts.filter(ext => ext !== 'svg'),
       sourceExts: [
         ...sourceExts,
         'scss', // for node-sass
         'sass', // for node-sass
         'cjs', // for @apollo/client
+        'svg',
       ],
     },
   };

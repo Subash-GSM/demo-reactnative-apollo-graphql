@@ -21,6 +21,8 @@ target 'demo_project' do
 
   pod 'react-native-video', :path => '../node_modules/react-native-video'
 
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
   target 'demo_projectTests' do
     inherit! :complete
     # Pods for testing
