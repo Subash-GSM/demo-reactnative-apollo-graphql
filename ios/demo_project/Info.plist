@@ -69,6 +69,19 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Avenir.ttc</string>
+		<string>Avenir-Black.ttf</string>
+		<string>Avenir-BlackOblique.ttf</string>
+		<string>Avenir-Book.ttf</string>
+		<string>Avenir-BookOblique.ttf</string>
+		<string>Avenir-Heavy.ttf</string>
+		<string>Avenir-HeavyOblique.ttf</string>
+		<string>Avenir-Light.ttf</string>
+		<string>Avenir-LightOblique.ttf</string>
+		<string>Avenir-Medium.ttf</string>
+		<string>Avenir-MediumOblique.ttf</string>
+		<string>Avenir-Oblique.ttf</string>
+		<string>Avenir-Roman.ttf</string>
 	</array>
 </dict>
 </plist>
