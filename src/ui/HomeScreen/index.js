@@ -1,5 +1,12 @@
 import {View, Text, FlatList, ScrollView, SafeAreaView} from 'react-native';
-import React, {useState, useRef, useMemo, useEffect, useContext} from 'react';
+import React, {
+  useState,
+  useRef,
+  useMemo,
+  useEffect,
+  useContext,
+  useCallback,
+} from 'react';
 
 //import Query
 import {usePostQuery} from '../../graphql/Post';
@@ -29,9 +36,36 @@ const HomeScreen = () => {
     }
   }, [postLists]);
 
+  const keyExtractor = item => {
+    // console.log(item.node.id)
+    return item?.node?.id;
+  };
+
+  const onViewRef = React.useRef(({viewableItems}) => {
+    // console.log(viewableItems[0]['item']['node']['id']);
+    mediaPlayerContext.setMediaPlayId(viewableItems[0]['item']['node']['id']);
+  });
+  const viewConfigRef = {viewAreaCoveragePercentThreshold: 50};
   return (
     <View style={{flex: 1, backgroundColor: '#000'}}>
-      <SafeAreaView>
+      <FlatList
+        viewabilityConfig={viewConfigRef}
+        data={postLists}
+        keyExtractor={keyExtractor}
+        renderItem={({item, index}) => {
+          return (
+            <PostList
+              item={item}
+              videoMute={videoMute}
+              setVideoMute={setVideoMute}
+              key={item.node.id}
+              scrollPosition={scrollPosition}
+            />
+          );
+        }}
+        onViewableItemsChanged={onViewRef.current}
+      />
+      {/* <SafeAreaView>
         <ScrollView
           onScroll={event => {
             setScrollPosition(event.nativeEvent.contentOffset.y);
@@ -48,7 +82,7 @@ const HomeScreen = () => {
             );
           })}
         </ScrollView>
-      </SafeAreaView>
+      </SafeAreaView> */}
     </View>
   );
 };

@@ -1,5 +1,5 @@
 import {View, Text, StyleSheet, Image, Dimensions} from 'react-native';
-import React, {useEffect, useState, useContext} from 'react';
+import React, {useEffect, useState, useContext, useMemo} from 'react';
 import PhotoShower from '../showImage';
 import VideoShower from '../showVideo';
 import {normalize} from '../../../utils/responsive';
@@ -30,20 +30,10 @@ type PostProps = {
   };
   videoMute: boolean;
   setVideoMute: Function;
-  scrollPosition: number;
 };
 
-const PostList = ({
-  item,
-  videoMute,
-  setVideoMute,
-  scrollPosition,
-}: PostProps) => {
-  const [startPosition, setStartPosition] = useState(0);
-  const [endPosition, setEndPosition] = useState(0);
-
+const PostList = React.memo(({item, videoMute, setVideoMute}: PostProps) => {
   const mediaPlayerContext = useContext(MediaContext);
-
   const _checkVideo = (url: string) => {
     const images = ['jpg', 'gif', 'png', 'jpeg'];
     const videos = ['m3u8', 'mp4', '3gp', 'ogg', 'mov'];
@@ -57,23 +47,8 @@ const PostList = ({
   const postData = item.node;
   const [likePost, setLikePost] = useState(false);
 
-  useEffect(() => {
-    if (startPosition < scrollPosition && endPosition > scrollPosition) {
-      mediaPlayerContext.setMediaPlayId(item['node']['id']);
-    }
-  }, [scrollPosition]);
-
   return (
-    <View
-      style={styles.postListContainer}
-      onLayout={(e: any) => {
-        const wDimensions = Dimensions.get('window');
-        let startPosition: number =
-          e.nativeEvent.layout.y - wDimensions.height / 2;
-        let endPosition: number = startPosition + wDimensions.height / 2;
-        setStartPosition(startPosition);
-        setEndPosition(endPosition);
-      }}>
+    <View style={styles.postListContainer}>
       {_checkVideo(postData.album[0].url) === 'image' ? (
         <PhotoShower
           album={postData.album}
@@ -264,7 +239,7 @@ const PostList = ({
       </View>
     </View>
   );
-};
+});
 
 const styles = StyleSheet.create({
   postListContainer: {
