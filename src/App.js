@@ -13,6 +13,13 @@ import HomeScreen from './ui/HomeScreen';
 // import SplashScreen from 'react-native-lottie-splash-screen';
 import {BhApolloProvider} from './apollo';
 export const MediaContext = createContext();
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import CameraComponent from './components/Media/Camera';
+import MediaUpload from './components/Media/MediaUpload';
+
+const Stack = createStackNavigator();
+
 const App = () => {
   // React.useEffect(() => {
   //   setTimeout(
@@ -24,11 +31,19 @@ const App = () => {
   // }, []);
   const [mediaPlayId, setMediaPlayId] = useState(null);
   return (
+    <NavigationContainer>
     <BhApolloProvider>
       <MediaContext.Provider value={{mediaPlayId, setMediaPlayId}}>
-        <HomeScreen />
+      <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen}  />
+      <Stack.Screen name="Camera" component={CameraComponent} options={{headerShown:false}} />
+      <Stack.Screen name="Media-Upload" component={MediaUpload} options={{headerShown:false}}/>
+      {/* <Stack.Screen name="Settings" component={Settings} /> */}
+    </Stack.Navigator>
+        
       </MediaContext.Provider>
     </BhApolloProvider>
+    </NavigationContainer>
   );
 };
 

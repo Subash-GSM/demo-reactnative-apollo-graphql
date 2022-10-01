@@ -1,6 +1,6 @@
 import React from 'react';
 import Svg, {Defs, ClipPath, Rect, G, Path} from 'react-native-svg';
-import { normalize } from '../utils/responsive';
+import {normalize} from '../utils/responsive';
 
 export const LocationSVG = (props: any) => (
   <Svg
@@ -633,5 +633,816 @@ export const PlaySVG = (props: any) => (
       transform="translate(11.748) rotate(90)"
       fill="#fff"
     />
+  </Svg>
+);
+
+export const CaptureSVG = (props: any) => (
+  <Svg
+    id="Group_4262"
+    data-name="Group 4262"
+    xmlns="http://www.w3.org/2000/svg"
+    width={70}
+    height={70}
+    viewBox="0 0 70 70"
+    {...props}>
+    <G id="Group_4263" data-name="Group 4263">
+      <Rect
+        id="Rectangle_1979"
+        data-name="Rectangle 1979"
+        width={56}
+        height={56}
+        rx={28}
+        transform="translate(7 7)"
+        fill="#fff"
+      />
+      <G
+        id="Rectangle_1980"
+        data-name="Rectangle 1980"
+        fill="none"
+        stroke="#fff"
+        strokeWidth={6}
+        opacity={0.42}>
+        <Rect width={70} height={70} rx={35} stroke="none" />
+        <Rect x={3} y={3} width={64} height={64} rx={32} fill="none" />
+      </G>
+    </G>
+  </Svg>
+);
+
+export const ChangeCameraSVG = (props: any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={46.074}
+    height={41.435}
+    viewBox="0 0 46.074 41.435"
+    {...props}>
+    <Defs></Defs>
+    <G transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_8733)">
+      <Path
+        id="Path_8733-2"
+        data-name="Path 8733"
+        d="M25.382,3.908H20l-.248-1.072A3.669,3.669,0,0,0,16.18,0H11.9A3.669,3.669,0,0,0,8.33,2.836L8.076,3.908H2.692A2.692,2.692,0,0,0,0,6.6V20.564a2.871,2.871,0,0,0,2.871,2.871H25.2a2.871,2.871,0,0,0,2.871-2.871V6.6a2.692,2.692,0,0,0-2.692-2.692m-6.54,14.172a6.742,6.742,0,0,1-4.864,2.051,6.819,6.819,0,0,1-6.694-5.684H5.337L8.09,11.224l2.753,3.223H8.937a5.163,5.163,0,0,0,8.742,2.5l.129-.132,1.164,1.135Zm1.142-2.435-2.753-3.223h1.827a5.163,5.163,0,0,0-9.3-2.065l-.107.151L8.325,9.57l.107-.151a6.791,6.791,0,0,1,12.275,3h2.031Z"
+        transform="translate(9 8)"
+        fill="#fff"
+        opacity={0.898}
+      />
+    </G>
+  </Svg>
+);
+
+export const ChooseFromGallerySVG = (props: any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={45.824}
+    height={39.545}
+    viewBox="0 0 45.824 39.545"
+    {...props}>
+    <Defs></Defs>
+    <G
+      id="Group_4269"
+      data-name="Group 4269"
+      transform="translate(9 8)"
+      opacity={0.898}>
+      <G id="Group_4270" data-name="Group 4270">
+        <G transform="matrix(1, 0, 0, 1, -9, -8)" filter="url(#Path_8737)">
+          <Path
+            id="Path_8737-2"
+            data-name="Path 8737"
+            d="M25.034,0H2.79A2.79,2.79,0,0,0,0,2.791V18.756a2.79,2.79,0,0,0,2.79,2.79H25.034a2.79,2.79,0,0,0,2.79-2.79V2.791A2.79,2.79,0,0,0,25.034,0M8.959,2.535a2.38,2.38,0,1,1-2.38,2.38,2.38,2.38,0,0,1,2.38-2.38m14.17,15.81H4.453a1.03,1.03,0,0,1-.982-1.46l4.056-6.859a1.112,1.112,0,0,1,1.964,0l1.919,3.245c.01-.024.019-.049.031-.072L15.88,5.567a1.112,1.112,0,0,1,1.964,0l6.266,11.319a1.03,1.03,0,0,1-.982,1.46"
+            transform="translate(9 8)"
+            fill="#fff"
+          />
+        </G>
+      </G>
+    </G>
+  </Svg>
+);
+
+export const CloseCameraSVG = (props: any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={49}
+    height={49}
+    viewBox="0 0 49 49"
+    {...props}>
+    <Defs></Defs>
+    <G
+      id="Group_3102"
+      data-name="Group 3102"
+      transform="translate(0.127 -0.458)">
+      <Rect
+        id="Rectangle_1899"
+        data-name="Rectangle 1899"
+        width={49}
+        height={49}
+        transform="translate(-0.127 0.458)"
+        fill="#fff"
+        opacity={0}
+      />
+      <G transform="matrix(1, 0, 0, 1, -0.13, 0.46)" filter="url(#Union_68)">
+        <Path
+          id="Union_68-2"
+          data-name="Union 68"
+          d="M8.672,19.709V11.038H0V8.672H8.672V0h2.366V8.672h8.673v2.366H11.038v8.672Z"
+          transform="translate(9.31 22.98) rotate(-45)"
+          fill="#fff"
+        />
+      </G>
+    </G>
+  </Svg>
+);
+
+
+export const ShowGridSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={23}
+    height={23}
+    viewBox="0 0 23 23"
+    {...props}
+  >
+    <G
+      id="Group_7441"
+      data-name="Group 7441"
+      transform="translate(-317.881 -58.881)"
+    >
+      <G
+        id="Rectangle_3599"
+        data-name="Rectangle 3599"
+        transform="translate(317.881 58.881)"
+        fill="none"
+        stroke="#fff"
+        strokeWidth={1.5}
+      >
+        <Rect width={23} height={23} stroke="none" />
+        <Rect x={0.75} y={0.75} width={21.5} height={21.5} fill="none" />
+      </G>
+      <G
+        id="Rectangle_3600"
+        data-name="Rectangle 3600"
+        transform="translate(317.881 65.881)"
+        fill="none"
+        stroke="#fff"
+        strokeWidth={1.5}
+      >
+        <Rect width={23} height={9} stroke="none" />
+        <Rect x={0.75} y={0.75} width={21.5} height={7.5} fill="none" />
+      </G>
+      <G
+        id="Rectangle_3601"
+        data-name="Rectangle 3601"
+        transform="translate(324.881 81.881) rotate(-90)"
+        fill="none"
+        stroke="#fff"
+        strokeWidth={1.5}
+      >
+        <Rect width={23} height={9} stroke="none" />
+        <Rect x={0.75} y={0.75} width={21.5} height={7.5} fill="none" />
+      </G>
+    </G>
+  </Svg>
+);
+
+export const ShowGridEnabledSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={23}
+    height={23}
+    viewBox="0 0 23 23"
+    {...props}
+  >
+    <G
+      id="Group_7441"
+      data-name="Group 7441"
+      transform="translate(-317.881 -58.881)"
+    >
+      <G
+        id="Rectangle_3599"
+        data-name="Rectangle 3599"
+        transform="translate(317.881 58.881)"
+        fill="none"
+        stroke="#2a68f4"
+        strokeWidth={1.5}
+      >
+        <Rect width={23} height={23} stroke="none" />
+        <Rect x={0.75} y={0.75} width={21.5} height={21.5} fill="none" />
+      </G>
+      <G
+        id="Rectangle_3600"
+        data-name="Rectangle 3600"
+        transform="translate(317.881 65.881)"
+        fill="none"
+        stroke="#2a68f4"
+        strokeWidth={1.5}
+      >
+        <Rect width={23} height={9} stroke="none" />
+        <Rect x={0.75} y={0.75} width={21.5} height={7.5} fill="none" />
+      </G>
+      <G
+        id="Rectangle_3601"
+        data-name="Rectangle 3601"
+        transform="translate(324.881 81.881) rotate(-90)"
+        fill="none"
+        stroke="#2a68f4"
+        strokeWidth={1.5}
+      >
+        <Rect width={23} height={9} stroke="none" />
+        <Rect x={0.75} y={0.75} width={21.5} height={7.5} fill="none" />
+      </G>
+    </G>
+  </Svg>
+);
+
+export const FlashAutoSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={27.289}
+    height={25.446}
+    viewBox="0 0 27.289 25.446"
+    {...props}
+  >
+    <Defs>
+      <ClipPath id="clip-path">
+        <Rect
+          id="Rectangle_3637"
+          data-name="Rectangle 3637"
+          width={27.289}
+          height={25.446}
+          transform="translate(0 0)"
+          fill="none"
+        />
+      </ClipPath>
+    </Defs>
+    <G id="Group_7542" data-name="Group 7542" transform="translate(0 0)">
+      <Path
+        id="Path_23527"
+        data-name="Path 23527"
+        d="M22.933,10.276l1.309,3.456H21.6Zm-.612-1.8-3.7,8.5h1.693l.767-1.945h3.684l.792,1.945h1.728l-3.66-8.5Z"
+        fill="#fff"
+      />
+      <G id="Group_7541" data-name="Group 7541">
+        <G id="Group_7540" data-name="Group 7540" clipPath="url(#clip-path)">
+          <Path
+            id="Path_23528"
+            data-name="Path 23528"
+            d="M17.592,10.947l-3.851-.083,3.421-6.105a.493.493,0,0,0-.787-.585L7.508,13.523a.494.494,0,0,0,.36.831l4.061-.011L8.189,20.68l0,0a.5.5,0,0,0,.083.6.488.488,0,0,0,.344.14h.008a.475.475,0,0,0,.351-.157l8.964-9.489a.482.482,0,0,0,.135-.324.493.493,0,0,0-.48-.509"
+            fill="#fff"
+          />
+          <Path
+            id="Path_23529"
+            data-name="Path 23529"
+            d="M12.725,23.6A10.879,10.879,0,1,1,21.1,5.793h2.276A12.717,12.717,0,0,0,12.729,0h0a12.724,12.724,0,1,0,0,25.447,13.09,13.09,0,0,0,5.785-1.388,12.711,12.711,0,0,0,4.89-4.405H21.1A10.863,10.863,0,0,1,12.725,23.6"
+            fill="#fff"
+          />
+        </G>
+      </G>
+    </G>
+  </Svg>
+);
+
+export const FlashOffSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={37.45}
+    height={37.45}
+    viewBox="0 0 37.45 37.45"
+    {...props}
+  >
+    <Defs></Defs>
+    <G id="Group_6611" data-name="Group 6611" transform="translate(6.25 6.25)">
+      <G id="Group_4267" data-name="Group 4267" transform="translate(0 0)">
+        <G transform="matrix(1, 0, 0, 1, -6.25, -6.25)" filter="url(#Union_69)">
+          <Path
+            id="Union_69-2"
+            data-name="Union 69"
+            d="M0,12.475A12.475,12.475,0,1,1,18.147,23.59a12.76,12.76,0,0,1-5.672,1.36A12.475,12.475,0,0,1,0,12.475Zm1.347,0A11.129,11.129,0,1,0,12.475,1.347,11.129,11.129,0,0,0,1.347,12.475Zm6.807,8.087,3.74-6.337a.244.244,0,0,0-.21-.367H7.618a.244.244,0,0,1-.177-.411L16.307,4.1a.243.243,0,0,1,.389.287l-3.423,6.109a.243.243,0,0,0,.206.362l3.857.093a.244.244,0,0,1,.17.411L8.541,20.852a.236.236,0,0,1-.173.079A.245.245,0,0,1,8.154,20.562Z"
+            transform="translate(6.25 6.25)"
+            fill="#fff"
+            stroke="#fff"
+            strokeWidth={0.5}
+          />
+        </G>
+        <G
+          id="Rectangle_3636"
+          data-name="Rectangle 3636"
+          transform="translate(2.617 4.368) rotate(-45)"
+          fill="#fff"
+          stroke="#fff"
+          strokeWidth={1}
+        >
+          <Rect width={2} height={25} stroke="none" />
+          <Rect x={0.5} y={0.5} width={1} height={24} fill="none" />
+        </G>
+      </G>
+    </G>
+  </Svg>
+);
+
+export const FlashONSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={37.45}
+    height={37.45}
+    viewBox="0 0 37.45 37.45"
+    {...props}
+  >
+    <Defs></Defs>
+    <G id="Group_6611" data-name="Group 6611" transform="translate(6.25 6.25)">
+      <G id="Group_4267" data-name="Group 4267" transform="translate(0 0)">
+        <G transform="matrix(1, 0, 0, 1, -6.25, -6.25)" filter="url(#Union_69)">
+          <Path
+            id="Union_69-2"
+            data-name="Union 69"
+            d="M0,12.475A12.475,12.475,0,1,1,18.147,23.59a12.76,12.76,0,0,1-5.672,1.36A12.475,12.475,0,0,1,0,12.475Zm1.347,0A11.129,11.129,0,1,0,12.475,1.347,11.129,11.129,0,0,0,1.347,12.475Zm6.807,8.087,3.74-6.337a.244.244,0,0,0-.21-.367H7.618a.244.244,0,0,1-.177-.411L16.307,4.1a.243.243,0,0,1,.389.287l-3.423,6.109a.243.243,0,0,0,.206.362l3.857.093a.244.244,0,0,1,.17.411L8.541,20.852a.236.236,0,0,1-.173.079A.245.245,0,0,1,8.154,20.562Z"
+            transform="translate(6.25 6.25)"
+            fill="#fff"
+            stroke="#fff"
+            strokeWidth={0.5}
+          />
+        </G>
+      </G>
+    </G>
+  </Svg>
+);
+
+
+export const VideoStartSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={80}
+    height={80}
+    viewBox="0 0 80 80"
+    {...props}
+  >
+    <G
+      id="Group_4262"
+      data-name="Group 4262"
+      transform="translate(-0.22 0.193)"
+    >
+      <G id="Group_4263" data-name="Group 4263" transform="translate(0 0)">
+        <Rect
+          id="Rectangle_1979"
+          data-name="Rectangle 1979"
+          width={64}
+          height={64}
+          rx={32}
+          transform="translate(8.22 7.808)"
+          fill="#fff"
+        />
+        <G
+          id="Rectangle_1980"
+          data-name="Rectangle 1980"
+          transform="translate(0.22 -0.192)"
+          fill="none"
+          stroke="#fff"
+          strokeWidth={6}
+          opacity={0.42}
+        >
+          <Rect width={80} height={80} rx={40} stroke="none" />
+          <Rect x={3} y={3} width={74} height={74} rx={37} fill="none" />
+        </G>
+        <Rect
+          id="Rectangle_2009"
+          data-name="Rectangle 2009"
+          width={24}
+          height={24}
+          rx={12}
+          transform="translate(28.22 26.808)"
+          fill="#c63614"
+        />
+      </G>
+    </G>
+  </Svg>
+);
+
+export const VideoProgressSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={80}
+    height={80}
+    viewBox="0 0 80 80"
+    {...props}
+  >
+    <G
+      id="Group_4262"
+      data-name="Group 4262"
+      transform="translate(-0.22 0.193)"
+    >
+      <G id="Group_4263" data-name="Group 4263" transform="translate(0 0)">
+        <Rect
+          id="Rectangle_1979"
+          data-name="Rectangle 1979"
+          width={64}
+          height={64}
+          rx={32}
+          transform="translate(8.22 7.808)"
+          fill="#fff"
+        />
+        <G
+          id="Rectangle_1980"
+          data-name="Rectangle 1980"
+          transform="translate(0.22 -0.192)"
+          fill="none"
+          stroke="#fff"
+          strokeWidth={6}
+          opacity={0.42}
+        >
+          <Rect width={80} height={80} rx={40} stroke="none" />
+          <Rect x={3} y={3} width={74} height={74} rx={37} fill="none" />
+        </G>
+        <Rect
+          id="Rectangle_2009"
+          data-name="Rectangle 2009"
+          width={24}
+          height={24}
+          rx={5}
+          transform="translate(28.22 26.808)"
+          fill="#c63614"
+        />
+      </G>
+    </G>
+  </Svg>
+);
+
+export const EffectsSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={39.119}
+    height={40.171}
+    viewBox="0 0 39.119 40.171"
+    {...props}
+  >
+    <Defs>
+      <ClipPath id="clip-path">
+        <Rect
+          id="Rectangle_1982"
+          data-name="Rectangle 1982"
+          width={39.119}
+          height={40.171}
+          transform="translate(0 0)"
+          fill="none"
+        />
+      </ClipPath>
+    </Defs>
+    <G
+      id="Group_4272"
+      data-name="Group 4272"
+      transform="matrix(-1, 0, 0, -1, 39.119, 40.171)"
+      opacity={0.44}
+      clipPath="url(#clip-path)"
+    >
+      <Path
+        id="Path_8738"
+        data-name="Path 8738"
+        d="M22.132,14.116l2.855-.139-2.855-.254A9.973,9.973,0,0,1,12.78,4.486L12.494,0l-.287,4.486a10.239,10.239,0,0,1-9.123,9.352L0,14.092l3.314.139c5.5.411,8.383,4.063,8.779,9.237l.4,4.486.287-4.486a9.717,9.717,0,0,1,9.352-9.352"
+        transform="translate(-0.001 1.298)"
+        fill="#fff"
+      />
+      <Path
+        id="Path_8739"
+        data-name="Path 8739"
+        d="M14.16,9.031l1.827-.089L14.16,8.78A6.381,6.381,0,0,1,8.177,2.87L7.993,0,7.81,2.87A6.551,6.551,0,0,1,1.973,8.853L0,9.016,2.12,9.1c3.52.263,5.363,2.6,5.617,5.91l.257,2.87.183-2.87A6.217,6.217,0,0,1,14.16,9.031"
+        transform="translate(23.132 1.146)"
+        fill="#fff"
+      />
+      <Path
+        id="Path_8740"
+        data-name="Path 8740"
+        d="M16.738,10.675,18.9,10.57l-2.159-.192A7.542,7.542,0,0,1,9.665,3.392L9.449,0,9.232,3.392a7.744,7.744,0,0,1-6.9,7.073L0,10.657l2.506.105c4.161.311,6.34,3.072,6.639,6.986l.3,3.392.217-3.392a7.349,7.349,0,0,1,7.073-7.073"
+        transform="translate(15.638 19.03)"
+        fill="#fff"
+      />
+    </G>
+  </Svg>
+);
+
+
+export const EditSVG = (props:any) => (
+  <Svg
+    id="Group_4279"
+    data-name="Group 4279"
+    xmlns="http://www.w3.org/2000/svg"
+    width={22.822}
+    height={27.387}
+    viewBox="0 0 22.822 27.387"
+    {...props}
+  >
+    <Rect
+      id="Rectangle_1994"
+      data-name="Rectangle 1994"
+      width={22.822}
+      height={2.282}
+      rx={1.141}
+      transform="translate(0 3.423)"
+      fill="#797979"
+    />
+    <Rect
+      id="Rectangle_1991"
+      data-name="Rectangle 1991"
+      width={22.822}
+      height={2.282}
+      rx={1.141}
+      transform="translate(0 12.552)"
+      fill="#797979"
+    />
+    <Rect
+      id="Rectangle_1989"
+      data-name="Rectangle 1989"
+      width={22.822}
+      height={2.282}
+      rx={1.141}
+      transform="translate(0 21.681)"
+      fill="#797979"
+    />
+    <G
+      id="Group_4275"
+      data-name="Group 4275"
+      transform="translate(13.693 9.129)"
+    >
+      <G
+        id="Rectangle_1992"
+        data-name="Rectangle 1992"
+        transform="translate(0 0)"
+        fill="#797979"
+        stroke="#797979"
+        strokeWidth={1}
+      >
+        <Rect width={2.282} height={9.129} stroke="none" />
+        <Rect x={0.5} y={0.5} width={1.282} height={8.129} fill="none" />
+      </G>
+      <Rect
+        id="Rectangle_1995"
+        data-name="Rectangle 1995"
+        width={3.423}
+        height={9.129}
+        transform="translate(2.282 0)"
+        fill="#0b0b0b"
+      />
+    </G>
+    <G id="Group_4278" data-name="Group 4278" transform="translate(4.564)">
+      <G
+        id="Rectangle_1992-2"
+        data-name="Rectangle 1992"
+        fill="#797979"
+        stroke="#797979"
+        strokeWidth={1}
+      >
+        <Rect width={2.282} height={9.129} stroke="none" />
+        <Rect x={0.5} y={0.5} width={1.282} height={8.129} fill="none" />
+      </G>
+      <Rect
+        id="Rectangle_1995-2"
+        data-name="Rectangle 1995"
+        width={3.423}
+        height={9.129}
+        transform="translate(2.282)"
+        fill="#0b0b0b"
+      />
+    </G>
+    <G
+      id="Group_4277"
+      data-name="Group 4277"
+      transform="translate(7.988 18.258)"
+    >
+      <G
+        id="Rectangle_1992-3"
+        data-name="Rectangle 1992"
+        transform="translate(0 0)"
+        fill="#797979"
+        stroke="#797979"
+        strokeWidth={1}
+      >
+        <Rect width={2.282} height={9.129} stroke="none" />
+        <Rect x={0.5} y={0.5} width={1.282} height={8.129} fill="none" />
+      </G>
+      <Rect
+        id="Rectangle_1995-3"
+        data-name="Rectangle 1995"
+        width={3.423}
+        height={9.129}
+        transform="translate(2.282 0)"
+        fill="#0e0e0e"
+      />
+    </G>
+  </Svg>
+);
+
+export const MusicSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={17.569}
+    height={22.676}
+    viewBox="0 0 17.569 22.676"
+    {...props}
+  >
+    <G
+      id="Group_4549"
+      data-name="Group 4549"
+      transform="translate(-1.607 -0.063)"
+    >
+      <Rect
+        id="Rectangle_2019"
+        data-name="Rectangle 2019"
+        width={1.432}
+        height={13.785}
+        transform="translate(5.606 6.278)"
+        fill="#797979"
+      />
+      <Path
+        id="Path_8788"
+        data-name="Path 8788"
+        d="M20.205,19.046a3.14,3.14,0,0,1-1.761,3.663c-1.46.751-3.037.334-3.522-.942A3.15,3.15,0,0,1,16.689,18.1c1.456-.75,3.034-.326,3.516.944"
+        transform="translate(-1.173 -2.101)"
+        fill="#797979"
+      />
+      <Path
+        id="Path_23526"
+        data-name="Path 23526"
+        d="M20.205,19.046a3.14,3.14,0,0,1-1.761,3.663c-1.46.751-3.037.334-3.522-.942A3.15,3.15,0,0,1,16.689,18.1c1.456-.75,3.034-.326,3.516.944"
+        transform="translate(-13.172 -0.343)"
+        fill="#797979"
+      />
+      <Rect
+        id="Rectangle_2020"
+        data-name="Rectangle 2020"
+        width={1.432}
+        height={15.785}
+        transform="translate(17.607 2.728)"
+        fill="#797979"
+      />
+      <Path
+        id="Path_8789"
+        data-name="Path 8789"
+        d="M5.475,10.732,18.906,7.285V2.564c0-1-.467-1.783-1.881-1.4l-9.9,2.186a2.245,2.245,0,0,0-1.65,2.447Z"
+        transform="translate(0.133 -1)"
+        fill="#797979"
+      />
+    </G>
+  </Svg>
+);
+
+export const VerticalRectangleActiveSVG =(props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={31}
+    height={42}
+    viewBox="0 0 31 42"
+    {...props}
+  >
+    <G
+      id="Rectangle_3421"
+      data-name="Rectangle 3421"
+      fill="none"
+      stroke="#fff"
+      strokeWidth={3}
+    >
+      <Rect width={31} height={42} stroke="none" />
+      <Rect x={1.5} y={1.5} width={28} height={39} fill="none" />
+    </G>
+  </Svg>
+);
+
+export const VerticalRectangleSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={31}
+    height={42}
+    viewBox="0 0 31 42"
+    {...props}
+  >
+    <G
+      id="Rectangle_3421"
+      data-name="Rectangle 3421"
+      fill="none"
+      stroke="#aaa"
+      strokeWidth={3}
+    >
+      <Rect width={31} height={42} stroke="none" />
+      <Rect x={1.5} y={1.5} width={28} height={39} fill="none" />
+    </G>
+  </Svg>
+);
+
+export const SquareActiveSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={35}
+    height={34}
+    viewBox="0 0 35 34"
+    {...props}
+  >
+    <G
+      id="Rectangle_3422"
+      data-name="Rectangle 3422"
+      fill="none"
+      stroke="#fff"
+      strokeWidth={3}
+    >
+      <Rect width={35} height={34} stroke="none" />
+      <Rect x={1.5} y={1.5} width={32} height={31} fill="none" />
+    </G>
+  </Svg>
+);
+
+export const SquareSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={35}
+    height={34}
+    viewBox="0 0 35 34"
+    {...props}
+  >
+    <G
+      id="Rectangle_3422"
+      data-name="Rectangle 3422"
+      fill="none"
+      stroke="#aaa"
+      strokeWidth={3}
+    >
+      <Rect width={35} height={34} stroke="none" />
+      <Rect x={1.5} y={1.5} width={32} height={31} fill="none" />
+    </G>
+  </Svg>
+);
+
+export const HorizontalRectangleActiveSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={41.539}
+    height={30.739}
+    viewBox="0 0 41.539 30.739"
+    {...props}
+  >
+    <G
+      id="Rectangle_3423"
+      data-name="Rectangle 3423"
+      transform="translate(0 30.739) rotate(-90)"
+      fill="none"
+      stroke="#fff"
+      strokeWidth={3}
+    >
+      <Rect width={30.739} height={41.539} stroke="none" />
+      <Rect x={1.5} y={1.5} width={27.739} height={38.539} fill="none" />
+    </G>
+  </Svg>
+);
+
+export const HorizontalRectangleSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={41.539}
+    height={30.739}
+    viewBox="0 0 41.539 30.739"
+    {...props}
+  >
+    <G
+      id="Rectangle_3423"
+      data-name="Rectangle 3423"
+      transform="translate(0 30.739) rotate(-90)"
+      fill="none"
+      stroke="#aaa"
+      strokeWidth={3}
+    >
+      <Rect width={30.739} height={41.539} stroke="none" />
+      <Rect x={1.5} y={1.5} width={27.739} height={38.539} fill="none" />
+    </G>
+  </Svg>
+);
+
+export const NewFeedBackSVG = (props:any) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={41}
+    height={41}
+    viewBox="0 0 41 41"
+    {...props}
+  >
+    <G id="Group_4438" data-name="Group 4438" transform="translate(-12 -63)">
+      <Rect
+        id="Rectangle_2085"
+        data-name="Rectangle 2085"
+        width={41}
+        height={41}
+        transform="translate(12 63)"
+        fill="#fff"
+      />
+      <Path
+        id="Path_192"
+        data-name="Path 192"
+        d="M-393.283,49l-10.1,10.1,10.1,10.1"
+        transform="translate(430.598 22.902)"
+        fill="none"
+        stroke="#414141"
+        strokeLinecap="round"
+        strokeWidth={2}
+      />
+    </G>
   </Svg>
 );

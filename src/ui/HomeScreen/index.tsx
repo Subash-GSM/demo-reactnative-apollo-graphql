@@ -1,4 +1,12 @@
-import {View, Text, FlatList, ScrollView, SafeAreaView} from 'react-native';
+import {
+  View,
+  Text,
+  FlatList,
+  ScrollView,
+  SafeAreaView,
+  TouchableOpacity,
+  NativeModules
+} from 'react-native';
 import React, {
   useState,
   useRef,
@@ -14,13 +22,32 @@ import {usePostQuery} from '../../graphql/Post';
 //import Components
 import PostList from '../../components/Post/postList';
 import {MediaContext} from '../../App';
+import { useNavigation } from '@react-navigation/native';
+
+import {
+  PESDK,
+  PhotoEditorModal,
+  Configuration,
+  Tool,
+  AdjustmentTool,
+} from 'react-native-photoeditorsdk';
+import {
+  VESDK,
+  VideoEditorModal,
+  Configuration as cfg,
+} from 'react-native-videoeditorsdk';
+import CameraComponent from '../../components/Media/Camera';
+const {CustomNative}=NativeModules;
 
 const HomeScreen = () => {
+  const navigation = useNavigation()
   const {loading, error, data, refetch, fetchMore} = usePostQuery();
   let postLists = [];
   const [videoMute, setVideoMute] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
   const mediaPlayerContext = useContext(MediaContext);
+
+  const [showCamera, setShowCamera] = useState(false);
 
   if (loading) {
     <View>
@@ -46,9 +73,33 @@ const HomeScreen = () => {
     mediaPlayerContext.setMediaPlayId(viewableItems[0]['item']['node']['id']);
   });
   const viewConfigRef = {viewAreaCoveragePercentThreshold: 50};
+
+
+
+  const openCamera = () => {
+    setShowCamera(true);
+  };
+
   return (
-    <View style={{flex: 1, backgroundColor: '#000'}}>
-      <FlatList
+    <View style={{flex: 1, backgroundColor: '#fff'}}>
+      {/* <PhotoEditorModal visible={true}/> */}
+    
+
+      <TouchableOpacity onPress={()=>{CustomNative.Toastshow("hai", CustomNative.SHORT);}}>
+        <Text
+          style={{
+            color: '#fff',
+            padding: 10,
+            alignSelf: 'center',
+            backgroundColor: 'blue',
+            borderRadius: 20,
+          }}>
+          Open Camera
+        </Text>
+      </TouchableOpacity>
+
+
+      {/* <FlatList
         viewabilityConfig={viewConfigRef}
         data={postLists}
         keyExtractor={keyExtractor}
@@ -64,7 +115,7 @@ const HomeScreen = () => {
           );
         }}
         onViewableItemsChanged={onViewRef.current}
-      />
+      /> */}
       {/* <SafeAreaView>
         <ScrollView
           onScroll={event => {
@@ -84,6 +135,10 @@ const HomeScreen = () => {
         </ScrollView>
       </SafeAreaView> */}
     </View>
+    // <View style={{marginTop:50}}>
+
+    // <Camera/>
+    // </View>
   );
 };
 
